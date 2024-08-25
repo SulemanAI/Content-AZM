@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Язык страницы -->
+<html lang="en">
+<head>
+    <!-- Кодировщик страницы -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Описание страницы при выдаче в поисковике -->
+    <meta name="description" content="This is my first Garden website. You can buy all of our plants here with a good price!">
+    <!-- Ключевые слова страницы при выдаче в поисковике -->
+    <meta name="keywords" content="garden, my garden, plants low price, plants, good plants, free plants, plants for garden">
+    <!-- Автор страницы -->
+    <meta name="author" content="JuniorPita">
+    <!-- Фавиконка (лого во вкладке) -->
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Название вкладки, страницы -->
+    <title>My Garden</title>
+    <!-- Подключение основных скриптов -->
+    <script defer src="js/script.min.js"></script>
+</head>
+<body>
+    <!-- Семантика страницы и подключение разных блоков к одному файлу -->
+    <header class='header' id='header'>
+        @@include('./html/sections/_header.html')
+    </header>
+    <!-- Быстрый скролл вверх -->
+    <aside>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+    </aside>
+    <main class='main'>
+        @@include('./html/sections/_home.html')
+        @@include('./html/sections/_about.html')
+        @@include('./html/sections/_steps.html')
+        @@include('./html/sections/_products.html')
+        @@include('./html/sections/_questions.html')
+        @@include('./html/sections/_contact.html')
+    </main>
+    <footer class='footer section'>
+        @@include('./html/sections/_footer.html')
+    </footer>
+    <!-- Подключение второстепенных скриптов -->
+    <script src="js/scrollreveal.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+// Базовая настройка стилей
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    margin: var(--header-height);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .4s; // Для смены темы (Dark/Light)
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

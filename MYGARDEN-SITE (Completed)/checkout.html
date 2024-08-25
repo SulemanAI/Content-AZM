@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/checkout.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Include your navbar here -->
+    </header>
+    <main class="container">
+        <h1>Checkout</h1>
+        <div id="order-summary"></div>
+        <button id="finalize-order" class="button">Finalize Order</button>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            const orderSummary = document.getElementById('order-summary');
+
+            if (cartItems.length === 0) {
+                orderSummary.innerHTML = '<p>Your cart is empty. <a href="index.html">Go back to shopping</a>.</p>';
+                return;
+            }
+
+            let total = 0;
+            cartItems.forEach(item => {
+                // Assuming `products.json` or another source is used to fetch product details
+                fetch('products.json')
+                    .then(response => response.json())
+                    .then(products => {
+                        const product = products.find(p => p.id === item.id);
+                        const itemTotal = product.price * item.quantity;
+                        total += itemTotal;
+
+                        orderSummary.innerHTML += `
+                            <div class="order-item">
+                                <h3>${product.name} x${item.quantity}</h3>
+                                <p>Price: $${itemTotal.toFixed(2)}</p>
+                            </div>
+                        `;
+                    });
+            });
+
+            orderSummary.innerHTML += `<h2>Total: $${total.toFixed(2)}</h2>`;
+
+            document.getElementById('finalize-order').addEventListener('click', function() {
+                alert('Order placed successfully!');
+                localStorage.removeItem('cart');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>

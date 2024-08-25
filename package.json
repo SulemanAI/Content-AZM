@@ -1,0 +1,48 @@
+{
+  "name": "fls-gulp",
+  "version": "1.0.0",
+  "description": "Сборка gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuniorPita/Project-XZero.git"
+  },
+  "author": "JuniorPita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuniorPita/Project-XZero/issues"
+  },
+  "homepage": "https://github.com/JuniorPita/Project-XZero#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-image": "^6.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "gulp-webp-html-fix": "^1.0.3",
+    "gulp-webpcss": "^1.1.1",
+    "jquery": "^3.6.0",
+    "jshint": "^2.13.1",
+    "npm": "^7.21.1",
+    "sass": "^1.38.1",
+    "webp-converter": "^2.2.3"
+  },
+  "dependencies": {
+    "gulp-webp-css": "^1.1.0"
+  }
+}

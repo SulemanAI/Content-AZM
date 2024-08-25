@@ -1,0 +1,82 @@
+// Questions
+
+.questions {
+    background-color: var(--first-color-lighten);
+
+    &__title {
+        color: #000;
+    }
+
+    &__container {
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    &__group {
+        display: grid;
+        row-gap: 1.5rem;
+    }
+
+    &__item {
+        background-color: var(--container-color);
+        border-radius: .25rem;
+
+        &:hover {
+            box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
+        }
+
+        &-title {
+            font-size: var(--small-font-size);
+            font-weight: var(--font-medium);
+        }
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        transition: .3s all;
+    }
+
+    &__description {
+        font-size: var(--smaller-font-size);
+        padding: 0 1.25rem 1.25rem 2.5rem;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        padding: .75rem .5rem;
+        cursor: pointer;
+    }
+
+    &__content {
+        overflow: hidden;
+        height: 0;
+    }
+
+    &__item,
+    &__header,
+    &__item-title,
+    &__icon,
+    &__description,
+    &__content {
+        transition: .3s;
+    }
+}
+
+// Работа с аккордеоном (открытие, закрытие и выделение)
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+    background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+    color: #FFF;
+}
+
+.accordion-open .questions__icon {
+    transform: rotate(45deg);
+}

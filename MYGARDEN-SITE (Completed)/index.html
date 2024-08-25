@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my first Garden website. You can buy all of our plants here with a good price!">
+    <meta name="keywords" content="garden, my garden, plants low price, plants, good plants, free plants, plants for garden">
+    <meta name="author" content="JuniorPita">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>My Garden</title>
+    <script defer src="js/script.min.js"></script>
+    
+    <style>
+        .search-bar {
+            margin: 20px auto;
+            text-align: center;
+        }
+        #searchInput {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class='header' id='header'>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-leaf-line nav__logo-icon"></i> MyGarden
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+                    <li class="nav__item"><a href="#faqs" class="nav__link">FAQs</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__btns">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!-- other nav items -->
+                    <li class="nav__item"><a href="cart.html" class="nav__link">Cart</a></li>
+                </ul>
+            </div>
+            <div class="nav__btns">
+                <a href="cart.html" class="nav__cart">
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+    </aside>
+    <main class='main'>
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="icons/home.webp" alt="Main Plants Image" class="home__img">
+                <div class="home__data">
+                    <h1 class="home__title">Plants will make <br> your life better.</h1>
+                    <p class="home__description">
+                        Create incredible plant design for your office or apartments.
+                        Add freshness to your new ideas right now!
+                    </p>
+                    <a href="#about" class="button button-flex">
+                        Explore
+                        <i class="ri-arrow-down-line button__icon"></i>
+                    </a>
+                </div>
+                <div class="home__social">
+                    <span class="home__social-follow">Follow Us</span>
+                    <div class="home__social-links">
+                        <a href="https://instagram.com/" target='_blank' class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target='_blank' class="home__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="https://youtube.com/" target='_blank' class="home__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <img src="icons/about.webp" alt="About Image" class="about__img">
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Who we really are & <br> why choose us
+                    </h2>
+                    <p class="about__description">
+                        We have over 5000+ unbiased reviews and our customers trust our plant process and delivery service every time.
+                    </p>
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            We always deliver on time
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            We give you guides to protect and care for your plants
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            We always come over for a check-up after sale
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            100% money back guaranteed
+                        </p>
+                    </div>
+                    <a href="#products" class="button-link button-flex">
+                        Shop Now <i class="ri-shopping-bag-line button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title-center steps__title">
+                    Steps to start your <br> plants off right
+                </h2>
+                <div class="steps__container grid">
+                    <div class="steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class="steps__card-title">Choose Plant</h3>
+                        <p class="steps__card-description">
+                            We have several varieties of plants you can choose from.
+                        </p>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class="steps__card-title">Place An Order</h3>
+                        <p class="steps__card-description">
+                            Once your order is set, we move to the next step, which is the shipping.
+                        </p>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class="steps__card-title">Get Plants Delivered</h3>
+                        <p class="steps__card-description">
+                            Our delivery process is easy; you receive the plant directly to your door.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product section container" id="products">
+            <h2 class="section__title-center">Check out <br> our products</h2>
+            <p class="product__description">
+                Here are some selected plants from our showroom, all are in excellent shape and have a long lifespan. Buy and enjoy the best quality.
+            </p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="searchProducts()">
+            </div>
+            <div class="product__container grid">
+                <!-- Products will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <script>
+        // Search functionality
+        function searchProducts() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let productCards = document.querySelectorAll('.product__card');
+
+            productCards.forEach(card => {
+                let productName = card.querySelector('.product__name').textContent.toLowerCase();
+                if (productName.includes(input)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Fetch and display products
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('products.json')
+                .then(response => response.json())
+                .then(products => {
+                    const productContainer = document.querySelector('.product__container');
+                    products.forEach(product => {
+                        const productCard = document.createElement('div');
+                        productCard.classList.add('product__card');
+                        productCard.innerHTML = `
+                            <img src="${product.image}" alt="${product.name}" class="product__img">
+                            <h3 class="product__name">${product.name}</h3>
+                            <span class="product__price">$${product.price}</span>
+                            <button class="button-link button-flex" onclick="addToCart(${product.id})">
+                                Add to Cart <i class="ri-shopping-cart-line button__icon"></i>
+                            </button>
+                        `;
+                        productContainer.appendChild(productCard);
+                    });
+                })
+                .catch(error => console.error('Error fetching products:', error));
+        });
+
+        // Add product to cart
+        function addToCart(productId) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let productExists = cart.find(item => item.id === productId);
+
+            if (productExists) {
+                productExists.quantity++;
+            } else {
+                cart.push({ id: productId, quantity: 1 });
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart!');
+        }
+    </script>
+        <!-- Questions -->
+<section class="questions section" id="faqs">
+    <h2 class="section__title-center questions__title container">
+        Some common questions <br>
+        were often asked to us
+    </h2>
+
+    <div class="questions__container container grid">
+        <div class="questions__group">
+            <div class="questions__item">
+                <div class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        My flowers are falling off <br>
+                        or dying?
+                    </h3>
+                </div>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        This could be due to overwatering, underwatering, or insufficient light. 
+                         Check your watering routine and ensure the plant is getting enough light.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <div class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        What causes leaves to <br>
+                        become a pale?
+                    </h3>
+                </div>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Pale leaves often indicate nutrient deficiencies or excessive sunlight. Adjust watering, fertilize, and provide appropriate light conditions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <div class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        What causes brown <br>
+                        crispy leaves?
+                    </h3>
+                </div>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Brown crispy leaves are usually from underwatering or low humidity. Increase watering and humidity to help the plant recover.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="questions__group">
+            <div class="questions__item">
+                <div class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        How do I choose the plant?
+                    </h3>
+                </div>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Select a plant based on your home's light conditions, available space, and how much care you can provide.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <div class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        How do I change the pots?
+                    </h3>
+                </div>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Gently remove the plant from its pot, loosen the roots, and repot it into a larger container with fresh soil. Water thoroughly after repotting.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions__item">
+                <div class="questions__header">
+                    <i class="ri-add-line questions__icon"></i>
+                    <h3 class="questions__item-title">
+                        Why are gnats flying <br>
+                        around my plant?
+                    </h3>
+                </div>
+
+                <div class="questions__content">
+                    <p class="questions__description">
+                        Gnats are attracted to moist soil and decaying matter. Reduce watering, improve soil drainage, and remove any debris to control them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Contact -->
+<section class="contact section container" id="contact">
+    <div class="contact__container grid">
+        <div class="contact__box">
+            <h2 class="section__title contact__title">
+                Reach out to us today <br>
+                via any of the given <br>
+                information
+            </h2>
+
+            <div class="contact__data">
+                <div class="contact__information">
+                    <h3 class="contact__subtitle">
+                        Call us for instant support
+                    </h3>
+
+                    <span class="contact__description">
+                        <i class="ri-phone-line contact__icon"></i>
+                        +92 21 111-22-33-44                    </span>
+                </div>
+
+                <div class="contact__information">
+                    <h3 class="contact__subtitle">
+                        Write us by Email
+                    </h3>
+
+                    <span class="contact__description">
+                        <i class="ri-mail-send-line contact__icon"></i>
+                        contact@mygarden.com  
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" class="contact__form">
+            <div class="contact__inputs">
+                <div class="contact__content">
+                    <input type="email" placeholder=" " class="contact__input" id="email" name="email">
+                    <label for="email" class="contact__label">Email</label>
+                </div>
+
+                <div class="contact__content">
+                    <input type="text" placeholder=" " class="contact__input" id="text" name="text">
+                    <label for="text" class="contact__label">Subject</label>
+                </div>
+
+                <div class="contact__content contact__area">
+                    <textarea name="message" placeholder=" " class="contact__input" id="message"></textarea>
+                    <label for="message" class="contact__label">Message</label>
+                </div>
+            </div>
+
+            <button class="button button-flex">
+                Send Message <i class="ri-send-plane-2-line button__icon"></i>
+            </button>
+        </form>
+    </div>
+</section>
+    </main>
+    <footer class='footer section'>
+        <!-- Footer -->
+<div class="footer__container container grid">
+    <div class="footer__content">
+        <a href="#" class="footer__logo">
+            <i class="ri-leaf-line footer__logo-icon"></i> MyGarden
+        </a>
+
+        <h3 class="footer__title">
+            Subscribe to our newsletter <br>
+            to stay update
+        </h3>
+
+        <div class="footer__subscribe">
+            <input type="email" placeholder="Enter your email" class="footer__input">
+
+            <button class="button button-flex footer__button">
+                Subscribe <i class="ri-send-plane-2-line button__icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer__content">
+        <h3 class="footer__title">Our Address: </h3>
+
+        <ul class="footer__data">
+            <li class="footer__information"><b> Greenhouse HQ: </b>  123 Greenway, Islamabad, Pakistan   </li>
+            <li class="footer__information"><b> Lahore Branch: </b>  45 Botanical Road, Gulberg, Lahore, Pakistan    </li>
+            <li class="footer__information"><b> Research Center: </b>Plot 12, Garden Avenue, Clifton, Karachi, Pakistan</li>
+        </ul>
+    </div>
+
+    <div class="footer__content">
+        <h3 class="footer__title">Contact Us: </h3>
+
+        <ul class="footer__data">
+            <li class="footer__information"><b>Contact:</b> +92 21 111-22-33-44</li>
+            <li class="footer__information"><b>Email:</b> contact@mygarden.com</li>
+            <li class="footer__information"><b>Visit Us:</b> 123 Greenway, Islamabad, Pakistan</li>
+        </ul>
+
+
+        <div class="footer__social">
+            <a href="https://instagram.com/" target='_blank' class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="https://twitter.com/" target='_blank' class="footer__social-link">
+                <i class="ri-twitter-line"></i>
+            </a>
+
+            <a href="https://youtube.com/" target='_blank' class="footer__social-link">
+                <i class="ri-youtube-line"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer__content">
+        <h3 class="footer__title">We accept all credit cards</h3>
+
+        <div class="footer__cards">
+            <img src="icons/card1.webp" alt="First Credit Card" class="footer__card">
+            <img src="icons/card2.webp" alt="Second Credit Card" class="footer__card">
+            <img src="icons/card3.webp" alt="Third Credit Card" class="footer__card">
+            <img src="icons/card4.webp" alt="Fourth Credit Card" class="footer__card">
+        </div>
+    </div>
+</div>
+
+<p class="footer__copy">&#169; JuniorPita. All rights reserved.</p>
+    </footer>
+    <!-- Подключение второстепенных скриптов -->
+    <script src="js/scrollreveal.min.js"></script>
+</body>
+</html>

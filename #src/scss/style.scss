@@ -1,0 +1,19 @@
+// Основные стили
+@import './config/variables'; // Переменные и тд
+@import './base/base'; // Базовые стили страницы
+@import './layout/layout'; // Повторяющиеся стили
+
+// Стили блоков
+@import './components/header';
+@import './components/home';
+@import './components/about';
+@import './components/steps';
+@import './components/products';
+@import './components/questions';
+@import './components/contact';
+@import './components/footer';
+
+// Дополнительные стили
+@import './components/buttons'; // Стили для кнопок
+@import './theme/theme'; // Стили для смены темы (Dark/Light)
+@import './media/media'; // Адаптация под разные устройства

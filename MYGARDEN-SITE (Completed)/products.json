@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Cacti Plant",
+        "price": 19.99,
+        "image": "icons/product1.webp",
+        "description": "A beautiful Cacti Plant."
+    },
+    {
+        "id": 2,
+        "name": "Cactus Plant",
+        "price": 21.99,
+        "image": "icons/product2.webp",
+        "description": "A unique Cactus Plant."
+    },
+    {
+        "id": 3,
+        "name": "Aloe Vera Plant",
+        "price": 25.99,
+        "image": "icons/product3.webp",
+        "description": "A medicinal Aloe Vera Plant."
+    },
+    {
+        "id": 4,
+        "name": "Succulent Plant",
+        "price": 29.99,
+        "image": "icons/product4.webp",
+        "description": "A lovely Succulent Plant."
+    },
+    {
+        "id": 5,
+        "name": "Green Plant",
+        "price": 32.99,
+        "image": "icons/product5.webp",
+        "description": "A refreshing Green Plant."
+    },
+    {
+        "id": 6,
+        "name": "Euphorbia milii (",
+        "price": 35.99,
+        "image": "icons/product6.webp",
+        "description": "A charming Cute Plant."
+    }
+]
+
